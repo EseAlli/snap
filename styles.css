@@ -242,7 +242,7 @@ a {
 
 @media (min-width: 1280px) {
   nav {
-    margin: 0.5rem 2rem 1.5rem 2rem;
+    margin: 0.5rem 2rem 2rem 2rem;
     justify-content: flex-start;
     gap: 1rem;
   }
@@ -292,9 +292,10 @@ a {
   .content {
     place-content: space-between;
     max-width: 1100px;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: flex-end;
     margin: 3rem auto 1rem auto;
+    padding: 1.5rem 0 0 0;
   }
 
   .hero {
@@ -317,6 +318,6 @@ a {
   }
 
   .clients img {
-    inline-size: 80px;
+    inline-size: 100px;
   }
 }
