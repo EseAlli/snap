@@ -42,6 +42,10 @@ li {
   display: none;
 }
 
+.expanded {
+  display: block;
+}
+
 .sm-menu {
   position: fixed;
   right: 0;
@@ -76,6 +80,7 @@ li {
 
 .menu .inner-menu {
   margin: 0 1.5rem;
+  display: none;
 }
 
 .menu div {
