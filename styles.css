@@ -353,4 +353,8 @@ section a {
   .clients img {
     inline-size: 80px;
   }
+
+  .clients img:first-of-type {
+    inline-size: 100px;
+  }
 }
