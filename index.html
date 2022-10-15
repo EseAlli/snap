@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="./images/logo.svg" alt="snap-logo" />
+        <img src="./images/icon-menu.svg" alt="menu" height="16" />
+        <ul>
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li></li>
+          <li>About</li>
+        </ul>
+        <ul>
+          <li>Login</li>
+          <li>Register</li>
+        </ul>
+      </nav>
 
-  Login
-  Register
+      <div class="hero"></div>
+      <section>
+        <h1>Make remote work</h1>
 
-  Make remote work
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <a href="#">Learn more</a>
+      </section>
+      <div class="clients">
+        <img src="./images/client-databiz.svg" alt="data-biz" />
+        <img src="./images/client-audiophile.svg" alt="audiophile" />
+        <img src="./images/client-meet.svg" alt="meet" />
+        <img src="./images/client-maker.svg" alt="make" />
+      </div>
+    </main>
+  </body>
 </html>
