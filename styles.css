@@ -251,4 +251,12 @@ a {
     line-height: 2rem;
     max-inline-size: 440px;
   }
+
+  .clients {
+    max-inline-size: 100%;
+  }
+
+  .clients img {
+    inline-size: 100px;
+  }
 }
