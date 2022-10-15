@@ -62,7 +62,7 @@ I learnt to proper semantics for nested lists ul in ul
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/questions/12129037/correct-semantics-for-ul-in-ul) - This helped me undersatnd what "Element ul not allowed as child of element ul in this context" meant and how to fix it.
+- [Correct semantic for ul in ul](https://stackoverflow.com/questions/12129037/correct-semantics-for-ul-in-ul) - This helped me undersatnd what "Element ul not allowed as child of element ul in this context" meant and how to fix it.
 
 ## Author
 
