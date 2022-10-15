@@ -129,7 +129,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  height: 300px;
+  block-size: 300px;
   order: 1;
 }
 
@@ -137,6 +137,7 @@ section {
   text-align: center;
   order: 2;
   margin: 1rem 0;
+  width: 100%;
 }
 
 h1 {
@@ -163,6 +164,7 @@ a {
   max-inline-size: 200px;
   border-radius: 12px;
   font-weight: 700;
+  text-align: center;
 }
 
 .clients {
@@ -175,4 +177,78 @@ a {
 .clients img {
   inline-size: 60px;
   object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  .content {
+    display: grid;
+    grid-template-areas: "section hero" "clients hero";
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    place-content: space-evenly;
+  }
+
+  .hero {
+    background-image: url(./images/image-hero-desktop.png);
+    background-size: contain;
+    grid-area: hero;
+    order: 1;
+    inline-size: 320px;
+    block-size: 550px;
+  }
+
+  section {
+    grid-area: section;
+    order: 2;
+    text-align: left;
+    place-self: flex-end;
+  }
+
+  h1 {
+    max-inline-size: 350px;
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 0;
+    max-inline-size: 350px;
+  }
+
+  .clients {
+    grid-area: clients;
+    max-inline-size: 350px;
+    margin: 0 auto;
+    inline-size: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    inline-size: 500px;
+  }
+  h1 {
+    font-size: 3.65rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    place-content: space-between;
+    max-width: 1200px;
+  }
+  .hero {
+    block-size: 650px;
+  }
+
+  h1 {
+    font-size: 5rem;
+    max-inline-size: 530px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-inline-size: 440px;
+  }
 }
