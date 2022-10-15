@@ -295,7 +295,7 @@ a {
     gap: 2rem;
     align-items: flex-end;
     margin: 3rem auto 1rem auto;
-    padding: 1.5rem 0 0 0;
+    padding: .5rem 0 0 0;
   }
 
   .hero {
@@ -318,6 +318,6 @@ a {
   }
 
   .clients img {
-    inline-size: 100px;
+    inline-size: 80px;
   }
 }
