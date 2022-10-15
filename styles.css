@@ -23,8 +23,11 @@ main {
 
 nav {
   display: flex;
-  margin: 1.5rem 1rem;
   justify-content: space-between;
+}
+
+nav img {
+  margin: 1.5rem 1rem;
 }
 
 ul {
@@ -122,6 +125,7 @@ li {
   text-align: center;
   padding: 0.5rem;
   border-radius: 12px;
+  max-inline-size: 200px;
 }
 
 .hero {
@@ -161,7 +165,7 @@ a {
   inline-size: 35%;
   margin: 1.5rem 0;
   padding: 0.75rem 0.25rem;
-  max-inline-size: 200px;
+  max-inline-size: 150px;
   border-radius: 12px;
   font-weight: 700;
   text-align: center;
@@ -184,7 +188,7 @@ a {
     display: grid;
     grid-template-areas: "section hero" "clients hero";
     width: 90%;
-    margin: 2rem auto;
+    margin: auto;
     gap: 1rem;
     place-content: space-evenly;
   }
@@ -237,9 +241,45 @@ a {
 }
 
 @media (min-width: 1280px) {
+  nav {
+    margin: 1rem 2rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  nav img:last-of-type {
+    display: none;
+  }
+
+  .sm-menu {
+    position: relative;
+    transform: translateX(0);
+    min-height: auto;
+    background: transparent;
+    width: 100%;
+  }
+
+  .menu {
+    height: auto;
+    width: 100%;
+    background: transparent;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  .menu div {
+    flex-direction: row;
+    margin-left: auto;
+    width: auto;
+  }
+
   .content {
     place-content: space-between;
-    max-width: 1200px;
+    max-width: 1100px;
   }
   .hero {
     block-size: 650px;
