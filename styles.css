@@ -70,7 +70,7 @@ li {
   padding: 1rem 0.75rem;
 }
 
-.menu img {
+.close-menu {
   margin-left: auto;
   display: inline-block;
 }
@@ -247,7 +247,11 @@ a {
     gap: 1rem;
   }
 
-  nav img:last-of-type {
+  .menu-icon {
+    display: none;
+  }
+
+  .close-menu {
     display: none;
   }
 
@@ -293,7 +297,7 @@ a {
     margin: 2rem auto;
   }
   .hero {
-    block-size: 650px;
+    block-size: 550px;
   }
 
   h1 {
