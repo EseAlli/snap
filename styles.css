@@ -242,7 +242,7 @@ a {
 
 @media (min-width: 1280px) {
   nav {
-    margin: 0.75rem 2rem;
+    margin: 0.5rem 2rem 1.5rem 2rem;
     justify-content: flex-start;
     gap: 1rem;
   }
