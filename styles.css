@@ -46,6 +46,12 @@ li a {
   color: var(--primary-gray);
 }
 
+li:hover,
+li a:hover {
+  cursor: pointer;
+  color: var(--primary-black);
+}
+
 a {
   text-decoration: none;
 }
@@ -175,6 +181,13 @@ section a {
   border-radius: 12px;
   font-weight: 700;
   text-align: center;
+}
+
+section a:hover {
+  color: var(--primary-black);
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--primary-black);
 }
 
 .clients {
