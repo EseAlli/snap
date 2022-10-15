@@ -42,8 +42,9 @@ li {
   display: none;
 }
 
-.expanded {
-  display: block;
+.sm-menu.expanded {
+  transform: translateX(0);
+  transition: ease-out 0.25s;
 }
 
 .sm-menu {
@@ -52,6 +53,8 @@ li {
   width: 100%;
   background-color: hsla(0, 0%, 8%, 0.7);
   min-height: 100vh;
+  transform: translateX(100%);
+  transition: linear 0.2s;
 }
 
 .menu {
@@ -78,9 +81,29 @@ li {
   color: var(--primary-gray);
 }
 
+.features::after {
+  content: url(./images/icon-arrow-down.svg);
+}
+
+.company::after {
+  content: url(./images/icon-arrow-down.svg);
+}
+
 .menu .inner-menu {
   margin: 0 1.5rem;
   display: none;
+}
+
+.menu .inner-menu.expanded {
+  display: flex;
+}
+
+.features.expanded::after {
+  content: url(./images/icon-arrow-up.svg);
+}
+
+.company.expanded::after {
+  content: url(./images/icon-arrow-up.svg);
 }
 
 .menu div {
