@@ -242,7 +242,7 @@ a {
 
 @media (min-width: 1280px) {
   nav {
-    margin: 1rem 2rem;
+    margin: 0 2rem;
     justify-content: flex-start;
     gap: 1rem;
   }
@@ -277,9 +277,18 @@ a {
     width: auto;
   }
 
+  .menu div li:last-of-type {
+    padding: 0.5rem 1rem;
+  }
+
+  .menu div ul {
+    gap: 2.25rem;
+  }
+
   .content {
     place-content: space-between;
     max-width: 1100px;
+    gap: 1.5rem;
   }
   .hero {
     block-size: 650px;
