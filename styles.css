@@ -121,7 +121,7 @@ a {
   content: url(./images/icon-arrow-up.svg);
 }
 
-.menu div {
+.auth {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ a {
   align-items: center;
 }
 
-.menu div li:last-of-type {
+.auth li:last-of-type {
   display: inline-block;
   border: 2px solid var(--primary-gray);
   inline-size: 100%;
@@ -320,17 +320,17 @@ section a:hover {
     left: 8%;
   }
 
-  .menu div {
+  .auth {
     flex-direction: row;
     margin-left: auto;
     width: auto;
   }
 
-  .menu div li:last-of-type {
+  .auth li:last-of-type {
     padding: 0.5rem 1.25rem;
   }
 
-  .menu div ul {
+  .auth ul {
     gap: 2.25rem;
   }
 
