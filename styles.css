@@ -14,6 +14,8 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
+  background-color: var(--primary-white);
 }
 
 main {
@@ -26,7 +28,8 @@ nav {
   justify-content: space-between;
 }
 
-nav img {
+.menu-icon,
+.logo {
   margin: 1.5rem 1rem;
 }
 
@@ -34,11 +37,17 @@ ul {
   list-style: none;
 }
 
-li {
+li,
+li a {
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: flex-start;
+  color: var(--primary-gray);
+}
+
+a {
+  text-decoration: none;
 }
 
 .md-menu {
@@ -101,10 +110,7 @@ li {
   display: flex;
 }
 
-.features.expanded::after {
-  content: url(./images/icon-arrow-up.svg);
-}
-
+.features.expanded::after,
 .company.expanded::after {
   content: url(./images/icon-arrow-up.svg);
 }
@@ -157,7 +163,7 @@ p {
   padding: 0 1.75rem;
 }
 
-a {
+section a {
   display: inline-block;
   background-color: var(--primary-black);
   color: var(--primary-white);
@@ -219,7 +225,7 @@ a {
     max-inline-size: 350px;
   }
 
-  a {
+  section a {
     margin: 3rem 0;
   }
 
@@ -273,6 +279,27 @@ a {
     flex-direction: row;
     align-items: center;
     margin: 0;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  .menu .inner-menu {
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    top: 2rem;
+    align-items: baseline;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 15%);
+  }
+
+  .features + .inner-menu {
+    left: -10%;
+  }
+
+  .company + .inner-menu {
+    left: 5%;
   }
 
   .menu div {
@@ -292,13 +319,13 @@ a {
   .content {
     place-content: space-between;
     max-width: 1100px;
-    gap: 2rem;
+    gap: 2.25rem;
     align-items: flex-end;
     margin: 3rem auto 1rem auto;
   }
 
   .hero {
-    block-size: 600px;
+    block-size: 620px;
   }
 
   h1 {
