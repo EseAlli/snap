@@ -295,11 +295,11 @@ section a {
   }
 
   .features + .inner-menu {
-    left: -10%;
+    left: -5%;
   }
 
   .company + .inner-menu {
-    left: 5%;
+    left: 8%;
   }
 
   .menu div {
